@@ -1,0 +1,465 @@
+2023-06-19 05:44:01 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 05:44:02 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 05:44:03 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 05:44:04 - pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+2023-06-19 05:44:04 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 05:44:05 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 05:44:06 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 05:44:07 - pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+2023-06-19 05:51:17 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 05:51:18 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1232] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 05:51:19 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 05:51:20 - pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+2023-06-19 05:51:20 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 05:51:21 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 05:51:22 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 05:51:23 - pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+2023-06-19 05:51:23 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 05:51:24 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 05:51:31 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 05:52:26 - root - ERROR - There seems an error at upsteam library, update the upsteam may help.
+2023-06-19 05:52:26 - root - ERROR - [chat_handle, unexpected error]: [WinError 64] The specified network name is no longer available
+Traceback (most recent call last):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 494, in finish_recv
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] The specified network name is no longer available
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 544, in chat_handle
+    async for final, response, reply_markup in bingAIStream(update.chat.id, update.text):
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 813, in bingAIStream
+    async for final, rsp in  EDGES[user_id]["bot"].ask_stream(prompt=messageText, conversation_style=EDGES[user_id]["style"]):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\EdgeGPT.py", line 165, in ask_stream
+    async for response in self.chat_hub.ask_stream(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\chathub.py", line 102, in ask_stream
+    async with connect(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 637, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 655, in __await_impl_timeout__
+    return await self.__await_impl__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 659, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 286, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 846, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 498, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] The specified network name is no longer available
+2023-06-19 05:52:26 - pyrogram.dispatcher - ERROR - [WinError 64] The specified network name is no longer available
+Traceback (most recent call last):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 494, in finish_recv
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] The specified network name is no longer available
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 558, in chat_handle
+    raise e
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 544, in chat_handle
+    async for final, response, reply_markup in bingAIStream(update.chat.id, update.text):
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 813, in bingAIStream
+    async for final, rsp in  EDGES[user_id]["bot"].ask_stream(prompt=messageText, conversation_style=EDGES[user_id]["style"]):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\EdgeGPT.py", line 165, in ask_stream
+    async for response in self.chat_hub.ask_stream(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\chathub.py", line 102, in ask_stream
+    async with connect(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 637, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 655, in __await_impl_timeout__
+    return await self.__await_impl__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 659, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 286, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 846, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 498, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] The specified network name is no longer available
+2023-06-19 05:52:47 - root - ERROR - There seems an error at upsteam library, update the upsteam may help.
+2023-06-19 05:52:47 - root - ERROR - [chat_handle, unexpected error]: [WinError 64] The specified network name is no longer available
+Traceback (most recent call last):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 494, in finish_recv
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] The specified network name is no longer available
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 544, in chat_handle
+    async for final, response, reply_markup in bingAIStream(update.chat.id, update.text):
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 813, in bingAIStream
+    async for final, rsp in  EDGES[user_id]["bot"].ask_stream(prompt=messageText, conversation_style=EDGES[user_id]["style"]):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\EdgeGPT.py", line 165, in ask_stream
+    async for response in self.chat_hub.ask_stream(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\chathub.py", line 102, in ask_stream
+    async with connect(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 637, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 655, in __await_impl_timeout__
+    return await self.__await_impl__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 659, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 286, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 846, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 498, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] The specified network name is no longer available
+2023-06-19 05:52:47 - pyrogram.dispatcher - ERROR - [WinError 64] The specified network name is no longer available
+Traceback (most recent call last):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 494, in finish_recv
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] The specified network name is no longer available
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 558, in chat_handle
+    raise e
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 544, in chat_handle
+    async for final, response, reply_markup in bingAIStream(update.chat.id, update.text):
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 813, in bingAIStream
+    async for final, rsp in  EDGES[user_id]["bot"].ask_stream(prompt=messageText, conversation_style=EDGES[user_id]["style"]):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\EdgeGPT.py", line 165, in ask_stream
+    async for response in self.chat_hub.ask_stream(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\chathub.py", line 102, in ask_stream
+    async with connect(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 637, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 655, in __await_impl_timeout__
+    return await self.__await_impl__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 659, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 286, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 846, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 498, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] The specified network name is no longer available
+2023-06-19 05:53:10 - root - ERROR - There seems an error at upsteam library, update the upsteam may help.
+2023-06-19 05:53:10 - root - ERROR - [chat_handle, unexpected error]: [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\sslproto.py", line 556, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLWantReadError: The operation did not complete (read) (_ssl.c:1002)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 544, in chat_handle
+    async for final, response, reply_markup in bingAIStream(update.chat.id, update.text):
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 813, in bingAIStream
+    async for final, rsp in  EDGES[user_id]["bot"].ask_stream(prompt=messageText, conversation_style=EDGES[user_id]["style"]):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\EdgeGPT.py", line 165, in ask_stream
+    async for response in self.chat_hub.ask_stream(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\chathub.py", line 102, in ask_stream
+    async with connect(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 637, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 655, in __await_impl_timeout__
+    return await self.__await_impl__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 659, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 401, in _loop_writing
+    self._write_fut = self._loop._proactor.send(self._sock, data)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 566, in send
+    ov.WSASend(conn.fileno(), buf, flags)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-06-19 05:53:10 - pyrogram.dispatcher - ERROR - [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\sslproto.py", line 556, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLWantReadError: The operation did not complete (read) (_ssl.c:1002)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 558, in chat_handle
+    raise e
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 544, in chat_handle
+    async for final, response, reply_markup in bingAIStream(update.chat.id, update.text):
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 813, in bingAIStream
+    async for final, rsp in  EDGES[user_id]["bot"].ask_stream(prompt=messageText, conversation_style=EDGES[user_id]["style"]):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\EdgeGPT.py", line 165, in ask_stream
+    async for response in self.chat_hub.ask_stream(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\chathub.py", line 102, in ask_stream
+    async with connect(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 637, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 655, in __await_impl_timeout__
+    return await self.__await_impl__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 659, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 401, in _loop_writing
+    self._write_fut = self._loop._proactor.send(self._sock, data)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 566, in send
+    ov.WSASend(conn.fileno(), buf, flags)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-06-19 05:54:01 - root - ERROR - There seems an error at upsteam library, update the upsteam may help.
+2023-06-19 05:54:01 - root - ERROR - [callback_query_handle, unexpected error]: [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\sslproto.py", line 556, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLWantReadError: The operation did not complete (read) (_ssl.c:1002)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 582, in callback_query_handle
+    async for final, response, reply_markup in bingAIStream(query.from_user.id, query_text):
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 813, in bingAIStream
+    async for final, rsp in  EDGES[user_id]["bot"].ask_stream(prompt=messageText, conversation_style=EDGES[user_id]["style"]):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\EdgeGPT.py", line 165, in ask_stream
+    async for response in self.chat_hub.ask_stream(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\chathub.py", line 102, in ask_stream
+    async with connect(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 637, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 655, in __await_impl_timeout__
+    return await self.__await_impl__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 659, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 401, in _loop_writing
+    self._write_fut = self._loop._proactor.send(self._sock, data)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 566, in send
+    ov.WSASend(conn.fileno(), buf, flags)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-06-19 05:54:01 - pyrogram.dispatcher - ERROR - [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\sslproto.py", line 556, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLWantReadError: The operation did not complete (read) (_ssl.c:1002)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 593, in callback_query_handle
+    raise e
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 582, in callback_query_handle
+    async for final, response, reply_markup in bingAIStream(query.from_user.id, query_text):
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 813, in bingAIStream
+    async for final, rsp in  EDGES[user_id]["bot"].ask_stream(prompt=messageText, conversation_style=EDGES[user_id]["style"]):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\EdgeGPT.py", line 165, in ask_stream
+    async for response in self.chat_hub.ask_stream(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\chathub.py", line 102, in ask_stream
+    async with connect(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 637, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 655, in __await_impl_timeout__
+    return await self.__await_impl__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 659, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 401, in _loop_writing
+    self._write_fut = self._loop._proactor.send(self._sock, data)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 566, in send
+    ov.WSASend(conn.fileno(), buf, flags)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-06-19 05:54:35 - root - ERROR - There seems an error at upsteam library, update the upsteam may help.
+2023-06-19 05:54:35 - root - ERROR - [chat_handle, unexpected error]: [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\sslproto.py", line 556, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLWantReadError: The operation did not complete (read) (_ssl.c:1002)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 544, in chat_handle
+    async for final, response, reply_markup in bingAIStream(update.chat.id, update.text):
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 813, in bingAIStream
+    async for final, rsp in  EDGES[user_id]["bot"].ask_stream(prompt=messageText, conversation_style=EDGES[user_id]["style"]):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\EdgeGPT.py", line 165, in ask_stream
+    async for response in self.chat_hub.ask_stream(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\chathub.py", line 102, in ask_stream
+    async with connect(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 637, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 655, in __await_impl_timeout__
+    return await self.__await_impl__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 659, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 401, in _loop_writing
+    self._write_fut = self._loop._proactor.send(self._sock, data)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 566, in send
+    ov.WSASend(conn.fileno(), buf, flags)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-06-19 05:54:35 - pyrogram.dispatcher - ERROR - [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\sslproto.py", line 556, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 979, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLWantReadError: The operation did not complete (read) (_ssl.c:1002)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 558, in chat_handle
+    raise e
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 544, in chat_handle
+    async for final, response, reply_markup in bingAIStream(update.chat.id, update.text):
+  File "C:\Users\hizal\Documents\hacking-tools\PyroEdgeGPTBot\PyroEdgeGptBot.py", line 813, in bingAIStream
+    async for final, rsp in  EDGES[user_id]["bot"].ask_stream(prompt=messageText, conversation_style=EDGES[user_id]["style"]):
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\EdgeGPT.py", line 165, in ask_stream
+    async for response in self.chat_hub.ask_stream(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\EdgeGPT\chathub.py", line 102, in ask_stream
+    async with connect(
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 637, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 655, in __await_impl_timeout__
+    return await self.__await_impl__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\client.py", line 659, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1112, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1145, in _create_connection_transport
+    await waiter
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 401, in _loop_writing
+    self._write_fut = self._loop._proactor.send(self._sock, data)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hizal\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 566, in send
+    ov.WSASend(conn.fileno(), buf, flags)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-06-19 13:31:43 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 13:31:44 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 13:31:45 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 13:31:46 - pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+2023-06-19 13:31:46 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 13:31:47 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 13:31:48 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 13:31:49 - pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+2023-06-19 13:31:49 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 14:38:30 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 14:39:14 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 14:39:27 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 14:39:28 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 14:39:29 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 14:39:30 - pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+2023-06-19 14:39:30 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 14:39:31 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 14:39:32 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 14:39:33 - pyrogram.connection.connection - WARNING - Connection failed! Trying again...
+2023-06-19 14:39:33 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 14:39:34 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 14:39:35 - pyrogram.connection.connection - WARNING - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+2023-06-19 14:39:36 - pyrogram.connection.connection - WARNING - Connection failed! Trying again...
